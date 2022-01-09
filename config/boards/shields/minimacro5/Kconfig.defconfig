@@ -5,5 +5,9 @@ config ZMK_KEYBOARD_NAME
 
 config ZMK_KSCAN_DIRECT_POLLING
 	default y
+
+config KSCAN
+    bool
+    default y
     
 endif
