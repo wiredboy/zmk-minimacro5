@@ -35,14 +35,14 @@ jobs:
         run: west zephyr-export
       - name: West Build (miniMacro5 - Leaf Cutter Labs)
         run: west build -s zmk/app -b nice_nano_v2 -- -DSHIELD=minimacro5 -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Leaf Cutter Labs MiniMacro5 DTS File
+      - name: Leaf Cutter Labs miniMacro5 DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/nice_nano_v2.dts.pre.tmp
-      - name: Leaf Cutter Labs MiniMacro5 Kconfig file
+      - name: Leaf Cutter Labs miniMacro5 Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
         run: cp build/zephyr/zmk.uf2 minimacro5_nice_nano_v2.uf2
-      - name: Archive (Leaf Cutter Labs MiniMacro5)
+      - name: Archive (Leaf Cutter Labs miniMacro5)
         uses: actions/upload-artifact@v2
         with:
           name: minimacro5_nice_nano_v2
