@@ -4,6 +4,6 @@ config ZMK_KEYBOARD_NAME
     default "Mini Macro 5"
 
 config ZMK_KSCAN_DIRECT_POLLING
-	default y
-    
+    default "y"
+
 endif
