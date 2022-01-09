@@ -1,0 +1,9 @@
+file_format: "1"
+id: minimacro5
+name: minimacro5
+type: shield
+url: https://github.com/wiredboy/zmk-minimacro5
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys

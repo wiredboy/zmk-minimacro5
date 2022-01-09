@@ -1,0 +1,5 @@
+# Copyright (c) 2022 Ramon Ramos
+# SPDX-License-Identifier: MIT
+
+config SHIELD_MINIMACRO5
+    def_bool $(shields_list_contains,minimacro5)
