@@ -14,7 +14,7 @@
 #define BRD 2
 
 /{
-&mt {
+&rt {
     retro-tap;
 };
     keymap {
@@ -22,7 +22,7 @@
 
         default_layer {
             bindings = <
-                &kp N1  &kp N2  &kp N3  &mt BRD N4  &mt PREFS N5
+                &kp N1  &kp N2  &kp N3  &rt BRD N4  &rt PREFS N5
             >;
         };
 
