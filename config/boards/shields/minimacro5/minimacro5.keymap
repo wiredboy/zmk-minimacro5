@@ -14,13 +14,11 @@
 #define BRD 2
 
 /{
-    &mt {
-        retro-tap;
-    };
-    
     keymap {
         compatible = "zmk,keymap";
-
+        &mt {
+          retro-tap;
+         };
         default_layer {
             bindings = <
                 &kp N1  &kp N2  &kp N3  &mt BRD N4  &mt PREFS N5
