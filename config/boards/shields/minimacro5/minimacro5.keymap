@@ -14,7 +14,9 @@
 #define BRD 2
 
 /{
-
+&mt {
+    retro-tap;
+};
     keymap {
         compatible = "zmk,keymap";
 
