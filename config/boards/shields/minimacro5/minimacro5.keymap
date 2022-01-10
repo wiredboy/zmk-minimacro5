@@ -14,12 +14,23 @@
 #define BRD 2
 
 /{
+        behaviors {
+        sh: shift {
+		compatible = "zmk,behavior-hold-tap";
+ 		label = "shift mod";
+ 		#binding-cells = <2>;
+ 		tapping_term_ms = <100>;
+		retro-tap;
+ 		flavor = "hold-preferred";
+ 		bindings = <&kp>, <&kp>;
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &kp N1  &kp N2  &kp N3  &mt BRD N4  &mt PREFS N5
+                &kp N1  &kp N2  &kp N3  &sh BRD N4  &sh PREFS N5
             >;
         };
 
