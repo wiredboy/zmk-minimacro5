@@ -13,6 +13,10 @@
 #define PREFS  1
 #define BRD 2
 
+&lt {
+    retro-tap;
+};
+
 /{
     keymap {
         compatible = "zmk,keymap";
