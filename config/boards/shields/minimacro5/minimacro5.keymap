@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define DEFAULT 0
-#define PREFS  1
+#define BT  1
 #define BRD 2
 
 &lt {
@@ -23,17 +23,17 @@
 
         default_layer {
             bindings = <
-                &kp N1  &kp N2  &kp N3  &lt BRD N4  &lt PREFS N5
+                &lt BT LG(LS(A)) &kp LG(LS(V))   &kp N3  &lt BRD N4  &kp N5
             >;
         };
 
-        prefs_layer {
+        BT_layer {
             bindings = <
-                &out OUT_TOG   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_CLR   &none
+                &none   &bt BT_SEL 1    &bt BT_SEL 2    &out OUT_TOG    &bt BT_CLR
             >;
         };
 
-        sys_layer {
+        brd_layer {
             bindings = <
                 &none   &none   &reset   &none   &bootloader
             >;
